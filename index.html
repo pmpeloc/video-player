@@ -8,15 +8,40 @@
     <title>Video Player</title>
   </head>
   <body>
-    <button class="button" id="play"></button>
-    <button class="button" id="pause" hidden></button>
-    <button class="button" id="backward"></button>
-    <button class="button" id="forward"></button>
-    <video
-      id="video"
-      width="400px"
-      src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-    ></video>
+    <div class="container">
+      <div class="player">
+        <button
+          class="button"
+          id="backward"
+          aria-label="Retroceder 10 segundos"
+          title="Retroceder 10 segundos"
+        ></button>
+        <button
+          class="button"
+          id="play"
+          aria-label="Reproducir"
+          title="Reproducir"
+        ></button>
+        <button
+          class="button"
+          id="pause"
+          aria-label="Pausar"
+          title="Pausar"
+          hidden
+        ></button>
+        <button
+          class="button"
+          id="forward"
+          aria-label="Avanzar 10 segundos"
+          title="Avanzar 10 segundos"
+        ></button>
+        <video
+          id="video"
+          width="400px"
+          src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+        ></video>
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>
