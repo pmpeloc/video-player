@@ -18,3 +18,15 @@ function handlePause() {
   play.hidden = false;
   pause.hidden = true;
 }
+
+backward.addEventListener('click', handleBackward);
+
+function handleBackward() {
+  video.currentTime = video.currentTime - 10;
+}
+
+forward.addEventListener('click', handleForward);
+
+function handleForward() {
+  video.currentTime = video.currentTime + 10;
+}
