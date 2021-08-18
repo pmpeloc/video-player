@@ -45,6 +45,7 @@ body {
   width: 100%;
   aspect-ratio: 16/9;
   vertical-align: middle;
+  /* object-fit: cover; PARA QUE EL POSTER CUBRA SIN IMPORTAR SI ES IMAGEN CUADRADA */
 }
 
 .player-title {
@@ -72,4 +73,14 @@ body {
 
 .player-progress input {
   width: 100%;
+}
+.player-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+
+.player:hover .player-overlay {
+  opacity: 1;
 }
