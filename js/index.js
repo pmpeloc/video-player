@@ -49,3 +49,15 @@ progress.addEventListener('input', handleInput);
 function handleInput() {
   video.currentTime = progress.value;
 }
+
+// Agregada funcionalidad para capturar la tecla presionada y dar play, pause, avanzar y retroceder
+window.onload = function () {
+  document.onkeypress = handlePlayerWithKeys;
+};
+
+function handlePlayerWithKeys(e) {
+  var char = String.fromCharCode(e.which);
+  if (char === 'p' || char === 'P') {
+    handlePlay();
+  }
+}
